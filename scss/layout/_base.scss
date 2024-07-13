@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:ital@0;1&family=Playfair+Display:ital@0;1&display=swap');
+
+.textcenter {
+    text-align: center;
+}
+
+
+.textnegrita {
+    font-weight: bold;
+}
+
+.subrayado-arriba {
+    text-decoration: overline;
+    background-color: #397267;
+    border-radius: 20px;
+}
+
+.subrayado-abajo {
+    text-decoration: underline;
+    background-color: #397267;
+    border-radius: 20px;
+}

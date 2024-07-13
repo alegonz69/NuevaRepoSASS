@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) { 
+    .main-contacto {
+        background-color: #191f1e;
+        section {
+            padding: 50px;
+            form {
+                text-align: center;
+                box-shadow: 0 0 35px #0006;
+                max-width: 750px;
+                margin: auto;
+                div textarea {
+                    background: transparent;
+                    border: 1px solid #cccaca;
+                }
+                h2 {
+                    text-align: center;
+                    color: #C1DCD7;
+                    padding-top: 15px;
+                    font-size: 23px;
+                }
+                .form-input {
+                    background-color: transparent;
+                    box-shadow: 0 0 35px #0006;
+                    padding: 12px;
+                    input {
+                        border-left:3px solid #397267;
+                        width: 80%;
+                        margin: 5px;
+                        background: transparent;
+                        border: 1px solid #cccaca;
+                        padding: 6px 8px;
+                        color: #26c7a9;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,206 @@
+@media screen and (max-width: 768px) { 
+    .main-grupos {
+        background:linear-gradient(#56857c, transparent,#56857c ) ;
+        color: #191f1e;
+        text-align: center;
+        text-shadow: 1px 1px 1px #bdaeae, -1px -1px 1px #fff;
+        h2 {
+            font-size: 35px;
+            font-family: sans-serif;
+            background-color: #161010;
+            padding: 15px;
+        }
+        section {
+            .container-grupos {
+                display: grid;
+                grid-template-areas: 
+                "grupoa" 
+                "grupob"
+                "grupoc"
+                "grupod";
+                gap: 5px;
+                padding: 3px;
+                filter: drop-shadow(0 0 15px #000);
+                #container-a {
+                    grid-area: grupoa;
+                    text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+                    border-radius: 20px;
+                    background-color:#f0dbdb;
+                    border-style:groove;
+                    table {
+                        thead tr {
+                            th {
+                                color: #e23434 ;
+                                padding: 8px;   
+                            }
+                            .column-th {
+                                display: none;
+                            }
+                        }
+                        
+                        tbody tr {
+                            td {
+                                padding: 15px 0px;
+                                border-top: 1px solid #f0dbdb;
+                                .flex-banderas {
+                                    display: flex;
+                                    gap: 10px; 
+                                    h5 {
+                                        font-size: 16px;
+                                    }
+                                    div {
+                                        width: 20%;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 100%;
+                                            filter: drop-shadow(0 0 15px #000);
+                                        } 
+                                    }        
+                                }
+                            } 
+                            .column-th {
+                                display: none;
+                            }
+                        }
+                         
+                    }
+                }
+                
+                #container-b {
+                    grid-area: grupob;
+                    text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+                    border-radius: 20px;
+                    background-color:#f0dbdb;
+                    border-style: groove;
+                    div table {
+                        thead tr {
+                            th {
+                                color: #e23434 ;
+                                padding: 8px;   
+                            }
+                            .column-th {
+                                display: none;
+                            }
+                        }
+                        
+                        tbody tr {
+                            td {
+                                padding: 15px 0px;
+                                border-top: 1px solid #8f7979;
+                                .flex-banderas {
+                                    display: flex;
+                                    gap: 10px; 
+                                    h5 {
+                                        font-size: 16px;
+                                    }
+                                    div {
+                                        width: 20%;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 100%;
+                                        } 
+                                    }        
+                                }
+                            } 
+                            .column-th {
+                                display: none;
+                            }
+                        }
+                         
+                    }
+                }
+                
+                #container-c {
+                    grid-area: grupoc;
+                    text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+                    border-radius: 20px;
+                    background-color:#f0dbdb;
+                    border-style: groove;
+                    div table {
+                        thead tr {
+                            th {
+                                color: #e23434 ;
+                                padding: 8px;   
+                            }
+                            .column-th {
+                                display: none;
+                            }
+                        }
+                        
+                        tbody tr {
+                            td {
+                                padding: 15px 0px;
+                                border-top: 1px solid #8f7979;
+                                .flex-banderas {
+                                    display: flex;
+                                    gap: 10px; 
+                                    h5 {
+                                        font-size: 16px;
+                                    }
+                                    div {
+                                        width: 20%;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 100%;
+                                        } 
+                                    }        
+                                }
+                            } 
+                            .column-th {
+                                display: none;
+                            }
+                        }    
+                    }
+                }
+                
+                #container-d {
+                    grid-area: grupod;
+                    text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+                    border-radius: 20px;
+                    background-color:#f0dbdb;
+                    border-style: groove;
+                    div table {
+                        thead tr {
+                            th {
+                                color: #e23434 ;
+                                padding: 8px;   
+                            }
+                            .column-th {
+                                display: none;
+                            }
+                        }
+                        
+                        tbody tr {
+                            td {
+                                padding: 15px 0px;
+                                border-top: 1px solid #8f7979;
+                                .flex-banderas {
+                                    display: flex;
+                                    gap: 10px; 
+                                    h5 {
+                                        font-size: 16px;
+                                    }
+                                    div {
+                                        width: 20%;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 100%;
+                                        } 
+                                    }        
+                                }
+                            } 
+                            .column-th {
+                                display: none;
+                            }
+                        }
+                         
+                    }
+                }
+            }
+        }
+    }
+}
