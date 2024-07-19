@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+    main {
+        .container-estadios {
+            #estadio-1, #estadio-2, #estadio-3, #estadio-4, #estadio-5, #estadio-6, #estadio-7, #estadio-8, #estadio-9, #estadio-10, #estadio-11, #estadio-12,  #estadio-13, #estadio-14 {
+                padding: 15px;
+                section {
+                    box-shadow: 0 0 55px 0 #000;
+                    border: 1px solid rgba(102, 98, 98, 0.498);
+                    border-radius: 10px;
+                    transition: box-shadow 0.3s ease-in-out;
+                    padding-bottom: 10px;
+                    &:hover {
+                        transform: scale(1.04);
+                        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+                    }
+                    article {
+                        img {
+                            width: 100%;
+                            border-radius: 10px 10px 0px 0px;
+                        }
+                    }
+                    div {
+                        padding: 3px;
+                        
+                        h3 {
+                            padding: 15px;
+                            color:#003282;
+                            margin: 0;
+                        }
+                        .datos-estadios {
+                            margin-left: 15px;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            p {
+                                margin: 0;
+                                color: #71717A;
+                            }
+                        }     
+                    }
+                 
+                }
+
+            }
+        }
+    }
+}

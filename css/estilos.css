@@ -63,20 +63,25 @@
     width: 50%;
     filter: drop-shadow(0 0 15px #000);
   }
+  .bg-color .container-fluid a img:active {
+    transform: translateX(5px);
+  }
   .bg-color .container-fluid div ul li a {
     font-size: 17px;
     color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
     font-size: 20px;
+    transition: all 0.2s ease;
   }
   .bg-color .container-fluid div ul li a:hover {
     background-color: rgba(255, 255, 255, 0.5803921569);
     border-radius: 10px;
-    width: 30%;
-  }
-  .bg-color .container-fluid div ul li a:hover:hover {
     transition: box-shadow 0.5s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 2px #666;
+    color: #ac9090;
+  }
+  .bg-color .container-fluid div ul li a:active {
+    transform: translateX(5px);
   }
   main .sec-noticia .sec-noticia1 {
     padding: 10px;
@@ -252,6 +257,7 @@
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
     font-size: 20px;
+    transition: all 0.2s ease;
   }
   .bg-color .container-fluid div ul li a:hover {
     background-color: rgba(255, 255, 255, 0.5803921569);
@@ -260,6 +266,10 @@
     width: 100%;
     transition: box-shadow 0.5s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 2px #666;
+  }
+  .bg-color .container-fluid div ul li a:active {
+    transform: translateX(5px);
   }
   main .grilla {
     display: grid;
@@ -314,7 +324,6 @@
     font-size: 20px;
   }
   main .sec-noticia .sec-noticia1 article div img {
-    filter: drop-shadow(0 0 15px #000);
     border-radius: 20px;
     width: 100%;
     filter: drop-shadow(0 0 15px #000);
@@ -678,6 +687,130 @@
     border-radius: 100%;
     height: 100%;
     filter: drop-shadow(0 0 15px #000);
+  }
+}
+@media screen and (max-width: 768px) {
+  main .container-estadios #estadio-1, main .container-estadios #estadio-2, main .container-estadios #estadio-3, main .container-estadios #estadio-4, main .container-estadios #estadio-5, main .container-estadios #estadio-6, main .container-estadios #estadio-7, main .container-estadios #estadio-8, main .container-estadios #estadio-9, main .container-estadios #estadio-10, main .container-estadios #estadio-11, main .container-estadios #estadio-12, main .container-estadios #estadio-13, main .container-estadios #estadio-14 {
+    padding: 15px;
+  }
+  main .container-estadios #estadio-1 section, main .container-estadios #estadio-2 section, main .container-estadios #estadio-3 section, main .container-estadios #estadio-4 section, main .container-estadios #estadio-5 section, main .container-estadios #estadio-6 section, main .container-estadios #estadio-7 section, main .container-estadios #estadio-8 section, main .container-estadios #estadio-9 section, main .container-estadios #estadio-10 section, main .container-estadios #estadio-11 section, main .container-estadios #estadio-12 section, main .container-estadios #estadio-13 section, main .container-estadios #estadio-14 section {
+    box-shadow: 0 0 55px 0 #000;
+    border: 1px solid rgba(102, 98, 98, 0.498);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    padding-bottom: 10px;
+  }
+  main .container-estadios #estadio-1 section:hover, main .container-estadios #estadio-2 section:hover, main .container-estadios #estadio-3 section:hover, main .container-estadios #estadio-4 section:hover, main .container-estadios #estadio-5 section:hover, main .container-estadios #estadio-6 section:hover, main .container-estadios #estadio-7 section:hover, main .container-estadios #estadio-8 section:hover, main .container-estadios #estadio-9 section:hover, main .container-estadios #estadio-10 section:hover, main .container-estadios #estadio-11 section:hover, main .container-estadios #estadio-12 section:hover, main .container-estadios #estadio-13 section:hover, main .container-estadios #estadio-14 section:hover {
+    transform: scale(1.04);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  main .container-estadios #estadio-1 section article img, main .container-estadios #estadio-2 section article img, main .container-estadios #estadio-3 section article img, main .container-estadios #estadio-4 section article img, main .container-estadios #estadio-5 section article img, main .container-estadios #estadio-6 section article img, main .container-estadios #estadio-7 section article img, main .container-estadios #estadio-8 section article img, main .container-estadios #estadio-9 section article img, main .container-estadios #estadio-10 section article img, main .container-estadios #estadio-11 section article img, main .container-estadios #estadio-12 section article img, main .container-estadios #estadio-13 section article img, main .container-estadios #estadio-14 section article img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  main .container-estadios #estadio-1 section div, main .container-estadios #estadio-2 section div, main .container-estadios #estadio-3 section div, main .container-estadios #estadio-4 section div, main .container-estadios #estadio-5 section div, main .container-estadios #estadio-6 section div, main .container-estadios #estadio-7 section div, main .container-estadios #estadio-8 section div, main .container-estadios #estadio-9 section div, main .container-estadios #estadio-10 section div, main .container-estadios #estadio-11 section div, main .container-estadios #estadio-12 section div, main .container-estadios #estadio-13 section div, main .container-estadios #estadio-14 section div {
+    padding: 3px;
+  }
+  main .container-estadios #estadio-1 section div h3, main .container-estadios #estadio-2 section div h3, main .container-estadios #estadio-3 section div h3, main .container-estadios #estadio-4 section div h3, main .container-estadios #estadio-5 section div h3, main .container-estadios #estadio-6 section div h3, main .container-estadios #estadio-7 section div h3, main .container-estadios #estadio-8 section div h3, main .container-estadios #estadio-9 section div h3, main .container-estadios #estadio-10 section div h3, main .container-estadios #estadio-11 section div h3, main .container-estadios #estadio-12 section div h3, main .container-estadios #estadio-13 section div h3, main .container-estadios #estadio-14 section div h3 {
+    padding: 15px;
+    color: #003282;
+    margin: 0;
+  }
+  main .container-estadios #estadio-1 section div .datos-estadios, main .container-estadios #estadio-2 section div .datos-estadios, main .container-estadios #estadio-3 section div .datos-estadios, main .container-estadios #estadio-4 section div .datos-estadios, main .container-estadios #estadio-5 section div .datos-estadios, main .container-estadios #estadio-6 section div .datos-estadios, main .container-estadios #estadio-7 section div .datos-estadios, main .container-estadios #estadio-8 section div .datos-estadios, main .container-estadios #estadio-9 section div .datos-estadios, main .container-estadios #estadio-10 section div .datos-estadios, main .container-estadios #estadio-11 section div .datos-estadios, main .container-estadios #estadio-12 section div .datos-estadios, main .container-estadios #estadio-13 section div .datos-estadios, main .container-estadios #estadio-14 section div .datos-estadios {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  main .container-estadios #estadio-1 section div .datos-estadios p, main .container-estadios #estadio-2 section div .datos-estadios p, main .container-estadios #estadio-3 section div .datos-estadios p, main .container-estadios #estadio-4 section div .datos-estadios p, main .container-estadios #estadio-5 section div .datos-estadios p, main .container-estadios #estadio-6 section div .datos-estadios p, main .container-estadios #estadio-7 section div .datos-estadios p, main .container-estadios #estadio-8 section div .datos-estadios p, main .container-estadios #estadio-9 section div .datos-estadios p, main .container-estadios #estadio-10 section div .datos-estadios p, main .container-estadios #estadio-11 section div .datos-estadios p, main .container-estadios #estadio-12 section div .datos-estadios p, main .container-estadios #estadio-13 section div .datos-estadios p, main .container-estadios #estadio-14 section div .datos-estadios p {
+    margin: 0;
+    color: #71717A;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main-estadios {
+    background-color: azure;
+  }
+  .main-estadios .container-estadios {
+    padding: 100px 20px;
+    gap: 15px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.4156862745));
+    display: grid;
+    grid-template-areas: "estadio1 estadio2 estadio3" "estadio4 estadio5 estadio6" "estadio7 estadio8 estadio9" "estadio10 estadio11 estadio12" "estadio13 estadio14 .";
+  }
+  .main-estadios .container-estadios #estadio-1 {
+    grid-area: estadio1;
+  }
+  .main-estadios .container-estadios #estadio-2 {
+    grid-area: estadio2;
+  }
+  .main-estadios .container-estadios #estadio-3 {
+    grid-area: estadio3;
+  }
+  .main-estadios .container-estadios #estadio-4 {
+    grid-area: estadio4;
+  }
+  .main-estadios .container-estadios #estadio-5 {
+    grid-area: estadio5;
+  }
+  .main-estadios .container-estadios #estadio-6 {
+    grid-area: estadio6;
+  }
+  .main-estadios .container-estadios #estadio-7 {
+    grid-area: estadio7;
+  }
+  .main-estadios .container-estadios #estadio-8 {
+    grid-area: estadio8;
+  }
+  .main-estadios .container-estadios #estadio-9 {
+    grid-area: estadio9;
+  }
+  .main-estadios .container-estadios #estadio-10 {
+    grid-area: estadio10;
+  }
+  .main-estadios .container-estadios #estadio-11 {
+    grid-area: estadio11;
+  }
+  .main-estadios .container-estadios #estadio-12 {
+    grid-area: estadio12;
+  }
+  .main-estadios .container-estadios #estadio-13 {
+    grid-area: estadio13;
+  }
+  .main-estadios .container-estadios #estadio-14 {
+    grid-area: estadio14;
+  }
+  .main-estadios .container-estadios section {
+    box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    padding-bottom: 10px;
+  }
+  .main-estadios .container-estadios section:hover {
+    transform: scale(1.04);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  .main-estadios .container-estadios section article img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .main-estadios .container-estadios section div {
+    padding: 3px;
+  }
+  .main-estadios .container-estadios section div h3 {
+    padding: 15px;
+    color: #003282;
+    margin: 0;
+  }
+  .main-estadios .container-estadios section div .datos-estadios {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .main-estadios .container-estadios section div .datos-estadios p {
+    margin: 0;
+    color: #71717A;
   }
 }
 @media screen and (max-width: 768px) {

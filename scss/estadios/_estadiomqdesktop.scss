@@ -1,0 +1,98 @@
+@media screen and (min-width: 769px) {
+    .main-estadios {
+        background-color: azure;
+        .container-estadios {
+            padding: 100px 20px;
+            gap: 15px;
+            filter: drop-shadow(0 0 10px #0000006a);
+            display: grid;
+            grid-template-areas: 
+            "estadio1 estadio2 estadio3"
+            "estadio4 estadio5 estadio6"
+            "estadio7 estadio8 estadio9"
+            "estadio10 estadio11 estadio12"
+            "estadio13 estadio14 .";
+            
+            #estadio-1 {
+                grid-area: estadio1;  
+            }
+            #estadio-2 {
+                grid-area: estadio2;
+            } 
+            #estadio-3{
+                grid-area: estadio3;
+            } 
+            #estadio-4{
+                grid-area: estadio4;
+            }    
+            #estadio-5{
+                grid-area: estadio5;
+            } 
+            #estadio-6{
+                grid-area: estadio6;
+            } 
+            #estadio-7{
+                grid-area: estadio7;
+            } 
+            #estadio-8{
+                grid-area: estadio8;
+            } 
+            #estadio-9{
+                grid-area: estadio9;
+            } 
+            #estadio-10{
+                grid-area: estadio10;
+            } 
+            #estadio-11{
+                grid-area: estadio11;              
+            } 
+            #estadio-12{
+                grid-area: estadio12;
+            }  
+            #estadio-13{
+                grid-area: estadio13;
+            } 
+            #estadio-14{
+                grid-area: estadio14;
+            }
+            section {
+                box-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.5);
+               
+                border-radius: 10px;
+                transition: box-shadow 0.3s ease-in-out;
+                padding-bottom: 10px;
+                &:hover {
+                    transform: scale(1.04);
+                    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+                }
+                article {
+                    img {
+                        width: 100%;
+                        border-radius: 10px 10px 0px 0px;
+                    }
+                }
+                div {
+                    padding: 3px;
+                    
+                    h3 {
+                        padding: 15px;
+                        color:#003282;
+                        margin: 0;
+                    }
+                    .datos-estadios {
+                        margin-left: 15px;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        p {
+                            margin: 0;
+                            color: #71717A;
+                        }
+                    }     
+                }
+             
+            }
+        }
+    }
+    
+}

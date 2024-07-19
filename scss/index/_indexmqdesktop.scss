@@ -51,6 +51,7 @@
                 color: rgb(0, 0, 0);
                 text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
                 font-size: 20px;
+                transition: all 0.2s ease;
                 &:hover {
                     background-color: #ffffff94;
                     border-radius: 10px;
@@ -58,6 +59,10 @@
                     width: 100%;
                     transition: box-shadow 0.5s ease-in-out;
                     cursor: pointer;
+                    box-shadow: 0 2px #666;
+                }
+                &:active {
+                    transform: translateX(5px);
                 }
             }    
         }
@@ -116,7 +121,6 @@
                         font-size: 20px;
                     }
                     div img {
-                        filter: drop-shadow(0 0 15px #000);
                         border-radius: 20px;
                         width:100%;
                         filter: drop-shadow(0 0 15px #000);
@@ -125,6 +129,7 @@
                             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
                             transform: scale(1.04);
                         }
+                      
                        
                     }
                 }       

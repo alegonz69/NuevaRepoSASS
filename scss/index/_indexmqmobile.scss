@@ -38,21 +38,26 @@
                 img {
                     width: 50%;
                     filter: drop-shadow(0 0 15px #000);
+                    &:active {
+                        transform: translateX(5px);
+                    }
                 }
             }
             div ul li a {    
                 font-size: 17px;
                 color: rgb(0, 0, 0);
-                text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
                 font-size: 20px;
+                transition: all 0.2s ease;
                 &:hover {
                     background-color: #ffffff94;
                     border-radius: 10px;
-                    width: 30%;
-                    &:hover { 
                     transition: box-shadow 0.5s ease-in-out;
                     cursor: pointer;
-                    }
+                    box-shadow: 0 2px #666;
+                    color: #ac9090;
+                }
+                &:active {
+                    transform: translateX(5px);
                 }
             }    
         }
