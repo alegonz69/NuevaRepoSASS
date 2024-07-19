@@ -2,7 +2,6 @@
     header {
         color: rgb(53, 10, 10); 
         background:linear-gradient(#56857c, transparent,#C1DCD7 ) ;
-        background-size: 100%;
         justify-content: center;
         text-align: center;
         display: flex;
@@ -11,13 +10,21 @@
             align-content: center;
             img {
                 width:100%;
-                filter: drop-shadow(0 0 15px #000);
+                &:hover {
+                    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                    transform: scale(1.04);
+                }
             }
         }
         .containerheader {
             width: 40%;
             margin-right: 111px;
             align-content:center;
+            h1 {
+                &:hover {
+                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+                }
+            }
             h6, h1, h5 {
                 text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
             }
@@ -30,8 +37,9 @@
         .container-fluid {
             .navbar-menu {
                 justify-content: center;
-              }
+            }
             a {
+                
                 width: 5%;
                 img {
                     width: 100%;
@@ -44,9 +52,12 @@
                 text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
                 font-size: 20px;
                 &:hover {
-                    background-color: #fff;
+                    background-color: #ffffff94;
                     border-radius: 10px;
+                    color: #ac9090;
                     width: 100%;
+                    transition: box-shadow 0.5s ease-in-out;
+                    cursor: pointer;
                 }
             }    
         }
@@ -61,16 +72,28 @@
             #imagen1 {
                 grid-area: imagen1;
                 box-shadow: 0 0 55px 0 #000;
+                &:hover {
+                    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                    transform: scale(1.04);
+                }
             }
               
             #imagen2 {
                 grid-area: imagen2;
                 box-shadow: 0 0 55px 0 #000;
+                &:hover {
+                    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                    transform: scale(1.04);
+                }
             }
               
             #imagen3 {
                 grid-area: imagen3;
                 box-shadow: 0 0 55px 0 #000;
+                &:hover {
+                    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                    transform: scale(1.04);
+                }
             }
         }
         .sec-noticia {
@@ -84,14 +107,25 @@
                 width: 100%;
                 article {
                     padding: 25px;
+                    h2{
+                        padding-bottom: 15px;
+                    }
                     h3 {
-                        padding: 50px;
+                        padding-top: 50px;
+                        text-align: center;
+                        font-size: 20px;
                     }
                     div img {
                         filter: drop-shadow(0 0 15px #000);
                         border-radius: 20px;
                         width:100%;
                         filter: drop-shadow(0 0 15px #000);
+                        transition: box-shadow 0.3s ease-in-out;
+                        &:hover {
+                            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+                            transform: scale(1.04);
+                        }
+                       
                     }
                 }       
             }
@@ -109,6 +143,10 @@
                             border-radius: 10px;
                             width: 50%;
                             filter: drop-shadow(0 0 15px #000);
+                            &:hover {
+                                box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+                                transform: scale(1.04);
+                            }
                         }
                         h4 {
                             text-align: center;
@@ -154,6 +192,14 @@
                             font-size: 22px;
                             display: block;
                             margin-bottom: 10px;
+                            &:hover {
+                                background-color: #ffffff94;
+                                border-radius: 10px;
+                                color: #ac9090;
+                                width: 100%;
+                                transition: box-shadow 0.5s ease-in-out;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }                
@@ -176,6 +222,10 @@
             img {
                 width: 30%;
                 filter: drop-shadow(0 0 15px #000);
+                &:hover {
+                    transform: scale(1.04);
+                    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+                }
             }
         }
     }

@@ -51,22 +51,26 @@
         </div>
   </nav>
   <main class="main-contacto">
-    <section>
-      <form action="contacto.html">
-        <h2>
-          Formulario de contacto
-        </h2>
-        <div class="form-input">
-          <input type="text" placeholder="Nombre completo">
-        </div>
-        <div class="form-input">
-        <input type="email" placeholder="Email">
-        </div>
-        <div>
-          <textarea rows="8" placeholder="Dejá tu mensaje."></textarea>
-        </div>
-      </form>
-    </section>
+    <section id="contact">
+      <div class="container-contact">
+          <h2>Contacto</h2>
+          <form id="contactForm">
+              <div class="form-group">
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Mensaje:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit">Enviar Mensaje</button>
+          </form>
+      </div>
+  </section>
   </main>
     <footer>
         <div class="footer-container">

@@ -70,9 +70,13 @@
     font-size: 20px;
   }
   .bg-color .container-fluid div ul li a:hover {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5803921569);
     border-radius: 10px;
     width: 30%;
+  }
+  .bg-color .container-fluid div ul li a:hover:hover {
+    transition: box-shadow 0.5s ease-in-out;
+    cursor: pointer;
   }
   main .sec-noticia .sec-noticia1 {
     padding: 10px;
@@ -83,10 +87,12 @@
     width: 100%;
   }
   main .sec-noticia .sec-noticia1 article h2 {
-    background-color: transparent;
-    color: transparent;
     font-size: 25px;
     filter: drop-shadow(0 0 15px #000);
+  }
+  main .sec-noticia .sec-noticia1 article h3 {
+    text-align: center;
+    font-size: 16px;
   }
   main .sec-noticia .sec-noticia2 {
     padding: 10px;
@@ -95,13 +101,48 @@
   main .sec-noticia .sec-noticia2 article div {
     display: flex;
     align-items: center;
-    border: 1px solid #c8b9b9;
+    height: 20vh;
   }
   main .sec-noticia .sec-noticia2 article div img {
     width: 40%;
     margin-right: 10px;
     border-radius: 20px;
     filter: drop-shadow(0 0 15px #000);
+  }
+  main .sec-noticia .sec-noticia2 article div h4 {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+  main .grilla {
+    display: grid;
+    grid-template-areas: "imagen1" "imagen2" "imagen3";
+    gap: 10px;
+    margin: 10px;
+  }
+  main .grilla #imagen1 {
+    grid-area: imagen1;
+    box-shadow: 0 0 55px 0 #000;
+  }
+  main .grilla #imagen1:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.04);
+  }
+  main .grilla #imagen2 {
+    grid-area: imagen2;
+    box-shadow: 0 0 55px 0 #000;
+  }
+  main .grilla #imagen2:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.04);
+  }
+  main .grilla #imagen3 {
+    grid-area: imagen3;
+    box-shadow: 0 0 55px 0 #000;
+  }
+  main .grilla #imagen3:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.04);
   }
   footer {
     background-color: rgb(167, 184, 184);
@@ -121,9 +162,11 @@
   }
   footer .footer-container .footer-links ul {
     display: flex;
-    gap: 7px;
     width: 90%;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin-left: 15px;
   }
   footer .footer-container .footer-links ul li {
     font-size: 15px;
@@ -133,6 +176,14 @@
   footer .footer-container .footer-links ul li a {
     text-decoration: none;
     color: #2b2525;
+  }
+  footer .footer-container .footer-links ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5803921569);
+    border-radius: 10px;
+    color: #ac9090;
+    width: 100%;
+    transition: box-shadow 0.5s ease-in-out;
+    cursor: pointer;
   }
   footer .footer-container .footer-contact {
     font-size: 15px;
@@ -155,7 +206,6 @@
   header {
     color: rgb(53, 10, 10);
     background: linear-gradient(#56857c, transparent, #C1DCD7);
-    background-size: 100%;
     justify-content: center;
     text-align: center;
     display: flex;
@@ -166,12 +216,18 @@
   }
   header .containerlogo img {
     width: 100%;
-    filter: drop-shadow(0 0 15px #000);
+  }
+  header .containerlogo img:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.04);
   }
   header .containerheader {
     width: 40%;
     margin-right: 111px;
     align-content: center;
+  }
+  header .containerheader h1:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
   header .containerheader h6, header .containerheader h1, header .containerheader h5 {
     text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
@@ -198,9 +254,12 @@
     font-size: 20px;
   }
   .bg-color .container-fluid div ul li a:hover {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5803921569);
     border-radius: 10px;
+    color: #ac9090;
     width: 100%;
+    transition: box-shadow 0.5s ease-in-out;
+    cursor: pointer;
   }
   main .grilla {
     display: grid;
@@ -212,13 +271,25 @@
     grid-area: imagen1;
     box-shadow: 0 0 55px 0 #000;
   }
+  main .grilla #imagen1:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.04);
+  }
   main .grilla #imagen2 {
     grid-area: imagen2;
     box-shadow: 0 0 55px 0 #000;
   }
+  main .grilla #imagen2:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.04);
+  }
   main .grilla #imagen3 {
     grid-area: imagen3;
     box-shadow: 0 0 55px 0 #000;
+  }
+  main .grilla #imagen3:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transform: scale(1.04);
   }
   main .sec-noticia {
     display: flex;
@@ -234,14 +305,24 @@
   main .sec-noticia .sec-noticia1 article {
     padding: 25px;
   }
+  main .sec-noticia .sec-noticia1 article h2 {
+    padding-bottom: 15px;
+  }
   main .sec-noticia .sec-noticia1 article h3 {
-    padding: 50px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
   }
   main .sec-noticia .sec-noticia1 article div img {
     filter: drop-shadow(0 0 15px #000);
     border-radius: 20px;
     width: 100%;
     filter: drop-shadow(0 0 15px #000);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  main .sec-noticia .sec-noticia1 article div img:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.04);
   }
   main .sec-noticia .sec-noticia2 {
     box-shadow: 0 0 55px 0 #000;
@@ -260,6 +341,10 @@
     border-radius: 10px;
     width: 50%;
     filter: drop-shadow(0 0 15px #000);
+  }
+  main .sec-noticia .sec-noticia2 article div img:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.04);
   }
   main .sec-noticia .sec-noticia2 article div h4 {
     text-align: center;
@@ -303,6 +388,14 @@
     display: block;
     margin-bottom: 10px;
   }
+  footer .footer-container .footer-links ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.5803921569);
+    border-radius: 10px;
+    color: #ac9090;
+    width: 100%;
+    transition: box-shadow 0.5s ease-in-out;
+    cursor: pointer;
+  }
   footer .footer-container .footer-contact {
     width: 33%;
     align-content: center;
@@ -322,6 +415,10 @@
     width: 30%;
     filter: drop-shadow(0 0 15px #000);
   }
+  footer .social-icons ul img:hover {
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  }
 }
 @media screen and (max-width: 768px) {
   .main-grupos {
@@ -340,7 +437,7 @@
     display: grid;
     grid-template-areas: "grupoa" "grupob" "grupoc" "grupod";
     gap: 5px;
-    padding: 3px;
+    padding: 5px 3px 5px 3px;
     filter: drop-shadow(0 0 15px #000);
   }
   .main-grupos section .container-grupos #container-a {
@@ -585,74 +682,124 @@
 }
 @media screen and (max-width: 768px) {
   .main-contacto {
-    background-color: #191f1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#262828, #494d4d);
   }
-  .main-contacto section {
-    padding: 50px;
+  .main-contacto #contact {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #eee7e7;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px;
   }
-  .main-contacto section form {
+  .main-contacto #contact .container-contact {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .main-contacto #contact .container-contact h2 {
     text-align: center;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
-    max-width: 750px;
-    margin: auto;
+    color: #333;
+    margin-bottom: 30px;
   }
-  .main-contacto section form div textarea {
-    background: transparent;
-    border: 1px solid #cccaca;
+  .main-contacto #contact .container-contact #contactForm .form-group {
+    margin-bottom: 20px;
   }
-  .main-contacto section form h2 {
-    text-align: center;
-    color: #C1DCD7;
-    padding-top: 15px;
-    font-size: 23px;
+  .main-contacto #contact .container-contact #contactForm .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
   }
-  .main-contacto section form .form-input {
-    background-color: transparent;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
-    padding: 12px;
+  .main-contacto #contact .container-contact #contactForm .form-group input, .main-contacto #contact .container-contact #contactForm .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
   }
-  .main-contacto section form .form-input input {
-    border-left: 3px solid #397267;
-    width: 80%;
-    margin: 5px;
-    background: transparent;
-    border: 1px solid #cccaca;
-    padding: 6px 8px;
-    color: #26c7a9;
+  .main-contacto #contact .container-contact #contactForm .form-group textarea {
+    resize: none;
+  }
+  .main-contacto #contact .container-contact #contactForm button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .main-contacto #contact .container-contact #contactForm button:hover {
+    background-color: #218838;
   }
 }
 @media screen and (min-width: 769px) {
   .main-contacto {
-    background-color: #191f1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#262828, #494d4d);
   }
-  .main-contacto section {
-    padding: 50px;
+  .main-contacto #contact {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #eee7e7;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px;
   }
-  .main-contacto section form {
+  .main-contacto #contact .container-contact {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .main-contacto #contact .container-contact h2 {
     text-align: center;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
-    max-width: 750px;
-    margin: auto;
+    color: #333;
+    margin-bottom: 30px;
   }
-  .main-contacto section form h2 {
-    text-align: center;
-    color: #C1DCD7;
-    margin-bottom: 15px;
-    padding-top: 15px;
+  .main-contacto #contact .container-contact #contactForm .form-group {
+    margin-bottom: 20px;
   }
-  .main-contacto section form .form-input {
-    background-color: transparent;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
-    padding: 12px;
+  .main-contacto #contact .container-contact #contactForm .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
   }
-  .main-contacto section form .form-input input {
-    border-left: 3px solid #397267;
-    width: 97%;
-    margin: 15px;
-    background: transparent;
-    border: 1px solid #cccaca;
-    padding: 6px 12px;
-    color: #26c7a9;
+  .main-contacto #contact .container-contact #contactForm .form-group input, .main-contacto #contact .container-contact #contactForm .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+  }
+  .main-contacto #contact .container-contact #contactForm .form-group textarea {
+    resize: none;
+  }
+  .main-contacto #contact .container-contact #contactForm button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .main-contacto #contact .container-contact #contactForm button:hover {
+    background-color: #218838;
   }
 }
 
