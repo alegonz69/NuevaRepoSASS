@@ -1,10 +1,11 @@
 @media screen and (min-width: 769px) {
-    .main-contacto {    
+    .main-contacto {
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background: linear-gradient(#262828,#494d4d );
+        background: linear-gradient(#262828, #494d4d);
+
         #contact {
             width: 100%;
             padding: 50px 20px;
@@ -13,23 +14,31 @@
             border-radius: 8px;
             max-width: 600px;
             margin: 20px;
+
             .container-contact {
                 max-width: 500px;
                 margin: 0 auto;
+
                 h2 {
                     text-align: center;
                     color: #333;
                     margin-bottom: 30px;
+                    border: 1px solid black;
+                    border-radius: 10px;
                 }
+
                 #contactForm {
                     .form-group {
                         margin-bottom: 20px;
+
                         label {
                             display: block;
                             margin-bottom: 8px;
                             color: #555;
                         }
-                        input, textarea {
+
+                        input,
+                        textarea {
                             width: 100%;
                             padding: 10px;
                             border: 1px solid #ccc;
@@ -38,10 +47,12 @@
                             font-family: 'Arial', sans-serif;
                             background-color: #f9f9f9;
                         }
+
                         textarea {
                             resize: none;
                         }
                     }
+
                     button {
                         width: 100%;
                         padding: 15px;
@@ -52,6 +63,7 @@
                         font-size: 18px;
                         cursor: pointer;
                         transition: background-color 0.3s ease;
+
                         &:hover {
                             background-color: #218838;
                         }

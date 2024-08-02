@@ -1,57 +1,71 @@
-@media screen and (min-width: 769px)   { 
+@media screen and (min-width: 769px) {
     header {
-        color: rgb(53, 10, 10); 
-        background:linear-gradient(#56857c, transparent,#C1DCD7 ) ;
+        color: rgb(53, 10, 10);
+        background: linear-gradient(#56857c, transparent, #C1DCD7);
         justify-content: center;
         text-align: center;
         display: flex;
-        .containerlogo {  
+
+        .containerlogo {
             width: 12%;
             align-content: center;
+
             img {
-                width:100%;
+                width: 100%;
+
                 &:hover {
                     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
                     transform: scale(1.04);
                 }
             }
         }
+
         .containerheader {
             width: 40%;
             margin-right: 111px;
-            align-content:center;
+            align-content: center;
+
             h1 {
                 &:hover {
                     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
                 }
             }
-            h6, h1, h5 {
+
+            h6,
+            h1,
+            h5 {
                 text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
             }
-        }  
+        }
     }
+
     .bg-color {
         font-style: italic;
         font-weight: bold;
-        background: linear-gradient(transparent,#C1DCD7, transparent);
+        background: linear-gradient(transparent, #C1DCD7, transparent);
+
         .container-fluid {
             .navbar-menu {
                 justify-content: center;
             }
+
             a {
-                
+
                 width: 5%;
+
                 img {
                     width: 100%;
                     filter: drop-shadow(0 0 15px #000);
                 }
             }
-            div ul li a {    
+
+            div ul li a {
                 font-size: 17px;
                 color: rgb(0, 0, 0);
                 text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
                 font-size: 20px;
                 transition: all 0.2s ease;
+
                 &:hover {
                     background-color: #ffffff94;
                     border-radius: 10px;
@@ -61,98 +75,117 @@
                     cursor: pointer;
                     box-shadow: 0 2px #666;
                 }
+
                 &:active {
-                    transform: translateX(5px);
+                    transform: scale(0.8);
                 }
-            }    
+            }
         }
     }
+
     main {
         .grilla {
             display: grid;
-            grid-template-areas: 
-            "imagen1 imagen2 imagen3";
+            grid-template-areas:
+                "imagen1 imagen2 imagen3";
             gap: 20px;
             padding: 50px;
+
             #imagen1 {
                 grid-area: imagen1;
                 box-shadow: 0 0 55px 0 #000;
+
                 &:hover {
                     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
                     transform: scale(1.04);
                 }
             }
-              
+
             #imagen2 {
                 grid-area: imagen2;
                 box-shadow: 0 0 55px 0 #000;
+
                 &:hover {
                     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
                     transform: scale(1.04);
                 }
             }
-              
+
             #imagen3 {
                 grid-area: imagen3;
                 box-shadow: 0 0 55px 0 #000;
+
                 &:hover {
                     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
                     transform: scale(1.04);
                 }
             }
         }
+
         .sec-noticia {
             display: flex;
             padding: 20px;
             gap: 10px;
             background: linear-gradient(#C1DCD7, transparent);
+
             .sec-noticia1 {
                 align-content: center;
                 box-shadow: 0 0 55px 0 #000;
                 width: 100%;
+
                 article {
                     padding: 25px;
-                    h2{
+
+                    h2 {
                         padding-bottom: 15px;
                     }
+
                     h3 {
                         padding-top: 50px;
                         text-align: center;
                         font-size: 20px;
                     }
+
                     div img {
                         border-radius: 20px;
-                        width:100%;
+                        width: 100%;
                         filter: drop-shadow(0 0 15px #000);
                         transition: box-shadow 0.3s ease-in-out;
+
                         &:hover {
                             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
                             transform: scale(1.04);
                         }
-                      
-                       
+
+
                     }
-                }       
+                }
             }
+
             .sec-noticia2 {
                 box-shadow: 0 0 55px 0 #000;
                 width: 70%;
+
                 article {
-                    height:100%;
+                    height: 100%;
                     align-content: center;
+
                     div {
                         display: flex;
                         gap: 10px;
                         padding: 10px;
+
                         img {
                             border-radius: 10px;
                             width: 50%;
                             filter: drop-shadow(0 0 15px #000);
+
                             &:hover {
                                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
                                 transform: scale(1.04);
                             }
                         }
+
                         h4 {
                             text-align: center;
                             align-content: center;
@@ -164,39 +197,48 @@
         }
 
     }
+
     footer {
-        background: linear-gradient(transparent,#C1DCD7);
+        background: linear-gradient(transparent, #C1DCD7);
         padding: 10px;
         text-align: center;
         align-content: center;
         color: rgb(36, 32, 28);
+
         .footer-container {
             display: flex;
+
             .footer-logo {
-                
+
                 width: 33%;
                 justify-content: center;
                 display: flex;
                 align-items: center;
+
                 img {
                     width: 100%;
                     filter: drop-shadow(0 0 15px #000);
-                    
+
                 }
             }
+
             .footer-links {
                 width: 33%;
                 align-content: center;
+
                 ul {
                     margin-right: 40px;
+
                     li {
                         list-style: none;
+
                         a {
                             text-decoration: none;
                             color: #1d1616;
                             font-size: 22px;
                             display: block;
                             margin-bottom: 10px;
+
                             &:hover {
                                 background-color: #ffffff94;
                                 border-radius: 10px;
@@ -207,26 +249,32 @@
                             }
                         }
                     }
-                }                
+                }
             }
+
             .footer-contact {
                 width: 33%;
                 align-content: center;
+
                 p {
                     font-size: 16px;
                 }
-            }  
+            }
         }
+
         .social-icons ul {
             height: 100%;
             display: flex;
             margin-top: 40px;
+
             li {
                 list-style: none;
             }
+
             img {
                 width: 30%;
                 filter: drop-shadow(0 0 15px #000);
+
                 &:hover {
                     transform: scale(1.04);
                     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));

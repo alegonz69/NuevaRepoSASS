@@ -1,101 +1,114 @@
 @media screen and (min-width: 769px) {
     .main-grupos {
-        background:linear-gradient(#56857c, transparent,#C1DCD7 ) ;
+        background: linear-gradient(#56857c, transparent, #C1DCD7);
         padding-bottom: 100px;
         color: #191f1e;
         text-align: center;
         text-shadow: 1px 1px 1px #bdaeae, -1px -1px 1px #fff;
+
         h2 {
             font-size: 35px;
             font-family: sans-serif;
             background-color: #161010;
             padding: 15px;
         }
+
         section {
             .container-grupos {
                 display: grid;
-                grid-template-areas: 
-                "grupoa grupob"
-                "grupoc grupod";
+                grid-template-areas:
+                    "grupoa grupob"
+                    "grupoc grupod";
                 padding: 100px 20px;
                 gap: 10px;
                 filter: drop-shadow(0 0 15px #000);
+
                 #container-a {
                     grid-area: grupoa;
                     text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
                     border-radius: 20px;
-                    background-color:#cccaca;
+                    background-color: #cccaca;
                     border-style: groove;
+
                     div h3 {
                         margin: 15px;
                     }
                 }
-                
+
                 #container-b {
                     grid-area: grupob;
                     text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
                     border-radius: 20px;
-                    background-color:#cccaca;
+                    background-color: #cccaca;
                     border-style: groove;
+
                     div h3 {
                         margin: 15px;
                     }
                 }
-                
+
                 #container-c {
                     grid-area: grupoc;
                     text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
                     border-radius: 20px;
-                    background-color:#cccaca;
+                    background-color: #cccaca;
                     border-style: groove;
+
                     div h3 {
                         margin: 15px;
                     }
                 }
-                
+
                 #container-d {
                     grid-area: grupod;
                     text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
                     border-radius: 20px;
-                    background-color:#cccaca;
+                    background-color: #cccaca;
                     border-style: groove;
+
                     div h3 {
                         margin: 15px;
                     }
                 }
+
                 table {
                     margin-bottom: 10px;
+
                     thead tr th {
-                        color: #e23434 ;
-                        padding: 15px;   
+                        color: #e23434;
+                        padding: 15px;
                     }
+
                     tbody tr {
                         border-top: 1px solid #7a7272;
+
                         td {
                             padding: 10px;
+
                             .flex-banderas {
                                 display: flex;
                                 width: 100%;
-                                gap: 5px; 
-                                h5 { 
+                                gap: 5px;
+
+                                h5 {
                                     font-size: 16px;
                                     margin-bottom: 0px;
                                     margin-top: 3px;
                                 }
+
                                 div {
                                     width: 20%;
-                                    img{
+
+                                    img {
                                         width: 100%;
                                         border-radius: 100%;
                                         height: 100%;
                                         filter: drop-shadow(0 0 15px #000);
                                     }
-                                } 
+                                }
                             }
-                            
                         }
-                    } 
-
+                    }
                 }
             }
         }
